@@ -14,4 +14,4 @@ den_g3 = [1 2];
 G3 = tf(num_g3, den_g3);
 
 seri_1 = series(G1, G2);
-HS = parallel(seri_1, G3);
+HS = feedback(seri_1, G3);
